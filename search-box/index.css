@@ -84,7 +84,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 92vh;
     background: #cfd1e1;
     overflow: hidden;
 }
@@ -182,4 +182,27 @@ ion-icon
     color: #555;
     font-size: 1.5em;
     cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .main-container {
+        width: 95%;
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    .intro-wrapper {
+
+        grid-template-columns: 1fr;
+        grid-template-areas  :
+            'nav-wrapper '
+            'left-column'
+            'right-column'
+        ;
+    }
+
+    .right-column {
+        justify-content: center;
+    }
 }

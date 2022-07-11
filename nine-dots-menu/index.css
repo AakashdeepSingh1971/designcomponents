@@ -83,7 +83,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 92vh;
     background: #DAB88B;
 }
 .navigation span a
@@ -157,4 +157,26 @@ ul {
 {
     color: #a73c1e;
     filter: drop-shadow(0 0 4px #e6c690)  drop-shadow(0 0 4px #e6c690)   drop-shadow(0 0 4px #e6c690);
+}
+@media screen and (max-width:1200px) {
+    .main-container {
+        width: 95%;
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    .intro-wrapper {
+
+        grid-template-columns: 1fr;
+        grid-template-areas  :
+            'nav-wrapper '
+            'left-column'
+            'right-column'
+        ;
+    }
+
+    .right-column {
+        justify-content: center;
+    }
 }
