@@ -7,7 +7,6 @@ box-sizing: border-box;
 }
 
 .main-container {
-    width : 1200px;
     margin: 0 auto;
 }
 
@@ -83,7 +82,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 92vh;
+    min-height: 93.2vh;
     background: #DAB88B;
 }
 .navigation span a
@@ -157,9 +156,9 @@ ul {
     color: #a73c1e;
     filter: drop-shadow(0 0 4px #e6c690)  drop-shadow(0 0 4px #e6c690)   drop-shadow(0 0 4px #e6c690);
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:100%) {
     .main-container {
-        width: 95%;
+        width: 100%;
 
     }
 }
